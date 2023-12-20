@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F8F6F2;
+    font-family: "Interstate", "-apple-system"," BlinkMacSystemFont", "Segoe UI", "Roboto", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.header{
+    width: 100%;
+    padding: 16px 0 16px 0;
+    font-size: 18px;
+    font-weight: 500;
+    position: sticky;
+    top: 0;
+    background-color: #F8F6F2;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40%  60%;
+    grid-gap: 1px;
+}
+.menu-button{
+    display: none;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    right: 0;
+}
+.links{
+    align-items: center;
+    gap: 1.5rem;
+    display: flex;
+    justify-content: right;
+}
+.links a{
+    padding-bottom: 5px;
+    color: black;
+}
+a{
+    text-decoration: none;
+    width: 100%;
+}
+.links a:hover{
+    border-bottom: 3px solid black;
+    
+}
+.links a svg {
+    position: relative;
+    top: 4px;
+}
+.logo a{
+    width: 20px;
+}
+/* ------------------------- */
+.section2{
+    width: 100%;
+    height: 20%;
+   
+    
+}
+.welcome{
+    width: 85%;
+    margin: auto;
+    color: #C0A468;
+    font-size: 1rem;
+
+}
+.section3{
+    width: 100%;
+}
+.img-frame{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+.img-frame img{
+    width: 90%;
+
+    background-size: cover;
+}
+.dis{
+    width: 85%;
+    margin: auto;
+}.dis p{
+padding-top: 1rem;
+}
+/* section4 */
+.section4{
+    width: 100%;
+
+}
+.col{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-gap: 1.25rem;
+
+}
+p{
+    font-size: 1.25rem;
+}
+.col-head{
+    width: 85%;
+    margin: auto;
+    color: #C0A468;
+    margin-bottom: 30px;
+}
+.col h4{
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+}
+.col p{
+    text-align: justify;
+    font-size: 1.24rem;
+    line-height: 1.75rem;
+    color: black;
+    
+
+}
+.subcol-r a{
+    text-decoration:none;
+    font-weight: 500;
+    color: black;
+}
+.sub-5{
+    color: #C0A468;
+    padding: 20px;
+    width: 85%;
+    margin: auto;
+}
+/* --footer------------------------------------ */
+.footer{
+    background-color: #423D39;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+.subfoot{
+    margin: auto;
+    color: white;
+    font-size: 18px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 3rem;
+    border-bottom: 1px solid white;
+}
+.cols a{
+    text-decoration:none;
+    color: white;
+}
+.cols p{
+    margin-top: 0;
+    line-height: 2rem;
+}
+.cols h6{
+    font-size: 20px;
+}
+
+.last{
+    padding-top: 10px;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.last{
+    padding-top: 10px;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.last a{
+    padding-left: 7px;
+
+}
+.last div span{
+font-weight: 500;
+
+}
+/* -------------------------------------------------------- */
+@media (max-width:835px){
+    .logo svg{
+        width: 250px;
+    }
+    .menu-button{
+        display: block;
+        position: relative;
+      
+    }
+    .links{
+        display: none;
+    
+    }
+    .img-frame{
+        grid-template-columns: auto auto auto;
+        width: 90%;
+        place-items: center;
+        
+        grid-gap: 2rem;
+    }
+    .welcome{
+        /* font-size: 0.75rem; */
+        /* margin-bottom: 1rem; */
+        margin:9% ;
+        margin-bottom: 30px;
+        color: #C0A468;
+        font-size: 1.5rem;
+        letter-spacing: 0.05rem
+    }
+    h4{
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
+    }
+    .subfoot{
+        grid-template-columns: auto auto;
+    }
+    .col{
+        grid-template-columns: auto;
+
+    }
+    .last{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub-5{
+        font-size: .25rem;
+    }
+}
+ @media (max-width:430px) {
+          
+      .img-frame{
+        grid-template-columns: auto;
+        grid-gap: 3rem;
+      }
+
+    .welcome h1{
+        margin: 0;
+        margin-bottom: 10%;
+        font-size: 1.5rem;
+        letter-spacing: 0.025rem;
+    }
+    h4{
+        font-size: 1.2rem;
+        letter-spacing:0.05rem ;
+    }
+    .col-head{
+        font-size: 1rem;
+        margin-top: 5%;
+    }
+    .sub-5{
+        font-size: 0.75rem;
+    }
+    .subfoot{
+        grid-template-columns: auto;
+    }
+    .cols p{
+        line-height: 2rem;
+    }
+    .last{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
